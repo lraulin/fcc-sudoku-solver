@@ -49,7 +49,7 @@ describe("Functional Tests", () => {
         .request(server)
         .post("/api/solve")
         .send({ puzzle });
-      expect(res).to.have.status(200);
+      expect(res).to.have.status(400);
       expect(res.body).to.have.property(
         "error",
         "Invalid characters in puzzle"

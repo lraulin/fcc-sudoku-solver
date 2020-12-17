@@ -106,4 +106,30 @@ describe("UnitTests", () => {
       "1.5..2.84..63.12.7.2..5.....9..1....8.2.3674.3.7.2..9.47...8..1..16....926914.37.";
     expect(check(puzzle, "A2", 5)).to.be.false;
   });
+
+  describe("requiredUnitTests", () => {
+    it("Logic handles a valid puzzle string of 81 characters", () => {});
+
+    it("Logic handles a puzzle string with invalid characters (not 1-9 or .)", () => {});
+
+    it("Logic handles a puzzle string that is not 81 characters in length", () => {});
+
+    it("Logic handles a valid row placement", () => {});
+
+    it("Logic handles an invalid row placement", () => {});
+
+    it("Logic handles a valid column placement", () => {});
+
+    it("Logic handles an invalid column placement", () => {});
+
+    it("Logic handles a valid region (3x3 grid) placement", () => {});
+
+    it("Logic handles an invalid region (3x3 grid) placement", () => {});
+
+    it("Valid puzzle strings pass the solver", () => {});
+
+    it("Invalid puzzle strings fail the solver", () => {});
+
+    it("Solver returns the the expected solution for an incomplete puzzzle", () => {});
+  });
 });
