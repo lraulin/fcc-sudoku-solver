@@ -29,6 +29,7 @@ module.exports = function (app) {
     // validation
     const isValid = validatePuzzle(res, puzzle);
     if (!isValid) return;
+
     const valid = solver.check(puzzle, coordinate, value);
     res.send({ valid });
   });
